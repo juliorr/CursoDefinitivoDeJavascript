@@ -16,7 +16,7 @@ gulp.task('styles', function () {
 
 gulp.task('assets', function () {
   gulp
-    .src('assets/*')
+    .src('assets/**/*')
     .pipe(gulp.dest('public'))
 });
 

@@ -8,8 +8,8 @@ var signupForm = yo `<div class="col s12 m7 ">
                                     <form class="signup-form">
                                         <h2>Registrate para ver fotos de tus amigos estudiando en platzi</h2>
                                         <div class="section">
-                                            <a class="btn btn-fb hiden-on-small-only">Iniciar session con Facebook</a>
-                                            <a class="btn btn-fb hide-on-med-and-up">Iniciar session</a>
+                                            <a class="btn btn-fb hide-on-small-only">Iniciar session con Facebook</a>
+                                            <a class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official"></i>Iniciar session</a>
                                         </div>
                                         <div class="divider"></div>
                                         <div class="section">
