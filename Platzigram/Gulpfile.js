@@ -14,6 +14,12 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('assets', function () {
+  gulp
+    .src('assets/*')
+    .pipe(gulp.dest('public'))
+});
+
 function compile(watch) {
   var bundle = watchify(browserify('./src/index.js'));
 
@@ -36,12 +42,6 @@ function compile(watch) {
   rebundle();
 }
 
-gulp.task('assets', function () {
-  gulp
-    .src('assets/*')
-    .pipe(gulp.dest('public'))
-});
-
 gulp.task('build', function () {
   return compile();
 });
@@ -50,4 +50,4 @@ gulp.task('watch', function () {
   return compile(true);
 });
 
-gulp.task('default', ['styles', 'assets', 'build']);
+gulp.task('default', ['styles', 'assets', 'watch']);
