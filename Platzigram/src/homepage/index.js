@@ -14,7 +14,7 @@ page('/', function (ctx, next) {
       },
       url: 'office.jpeg',
       likes: 1024,
-      liked: true
+      liked: false
     },
     {
       user: {
