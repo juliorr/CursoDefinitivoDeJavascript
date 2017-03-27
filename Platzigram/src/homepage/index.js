@@ -6,5 +6,25 @@ var title = require('title');
 page('/', function (ctx, next) {
   title('Platzigram');
   var main = document.getElementById('main-container');
-  empty(main).appendChild(template);
+  var pictures = [
+    {
+      user: {
+        username: 'Julio',
+        avatar: "https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/12400842_10153286774571319_2541176558973363503_n.jpg?oh=8fcd3f41d33243f569bbaf5ed597c585&oe=5956E219" 
+      },
+      url: 'office.jpeg',
+      likes: 1024,
+      liked: true
+    },
+    {
+      user: {
+        username: 'Julio',
+        avatar: "https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/12400842_10153286774571319_2541176558973363503_n.jpg?oh=8fcd3f41d33243f569bbaf5ed597c585&oe=5956E219" 
+      },
+      url: 'office.jpeg',
+      likes: 2,
+      liked: true
+    },
+  ];
+  empty(main).appendChild(template(pictures));
 });
