@@ -39,3 +39,4 @@ jspm_packages
 Platzigram/node_modules
 Platzigram/public
 .vscode
+.idea

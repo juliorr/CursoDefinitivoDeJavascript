@@ -14,7 +14,8 @@ page('/', function (ctx, next) {
       },
       url: 'office.jpeg',
       likes: 1024,
-      liked: false
+      liked: false,
+      createAt: new Date()
     },
     {
       user: {
@@ -23,7 +24,8 @@ page('/', function (ctx, next) {
       },
       url: 'office.jpeg',
       likes: 2,
-      liked: true
+      liked: true,
+      createAt: new Date().setDate(new Date().getDate() - 10)
     },
   ];
   empty(main).appendChild(template(pictures));
